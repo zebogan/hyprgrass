@@ -28,4 +28,7 @@ if not wftouch.found()
   wftouch = subproject('wf-touch').get_variable('wftouch')
 endif
 
+dependency('libinput'),
+dependency('wayland-server'),
+
 subdir('src')
